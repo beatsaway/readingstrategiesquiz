@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Strategies Fill-in-the-Blanks</title>
+    <style>
+        body {
+            font-family: 'Cambria', system-ui, serif;
+            background: #f0f4f8;
+            padding: 40px;
+        }
+
+        .container {
+            width: 88%;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .strategy {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #1f2937;
+        }
+
+        .strategy strong {
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        .select {
+            padding: 6px 10px;
+            font-size: 2rem;
+            margin-left: 6px;
+            border-radius: 8px;
+            outline: none;
+            border: 2px solid #d1d5db;
+            transition: border-color 0.3s ease;
+            background-color: #eee;
+            color: #1f2937;
+        }
+
+        .select:focus {
+            border-color: #FbF2F6;
+        }
+
+        .select.correct {
+            background-color: #34d399;
+            color: white;
+            border-color: #34d399;
+        }
+
+        .select.incorrect {
+            background-color: #f87171;
+            color: white;
+            border-color: #f87171;
+        }
+
+        .select option:first-child {
+            color: #6b7280;
+        }
+
+        .question {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            color: #4b5563;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Reading strategies for better understanding 📚</h1>
+
+    <div class="strategy">
+        <strong>1️⃣ Linking to background knowledge and past experience 🔗</strong><br>
+        Text is not just text. You link them to what you have 👁️
+        <select class="select" onchange="checkAnswer(this, 'seen')">
+            <option value=" "> </option>
+            <option value="seen">seen</option>
+            <option value="imagined">imagined</option>
+            <option value="wrote">wrote</option>
+        </select>, 👂
+        <select class="select" onchange="checkAnswer(this, 'heard')">
+            <option value=" "> </option>
+            <option value="heard">heard</option>
+            <option value="whispered">whispered</option>
+            <option value="forgot">forgot</option>
+        </select>, 👃
+        <select class="select" onchange="checkAnswer(this, 'smelled')">
+            <option value=" "> </option>
+            <option value="smelled">smelled</option>
+            <option value="drawn">drawn</option>
+            <option value="painted">painted</option>
+        </select>, 👅
+        <select class="select" onchange="checkAnswer(this, 'tasted')">
+            <option value=" "> </option>
+            <option value="tasted">tasted</option>
+            <option value="felt">felt</option>
+            <option value="saw">saw</option>
+        </select>, ✋
+        <select class="select" onchange="checkAnswer(this, 'touched')">
+            <option value=" "> </option>
+            <option value="touched">touched</option>
+            <option value="jumped">jumped</option>
+            <option value="ran">ran</option>
+        </select>, ❤️
+        <select class="select" onchange="checkAnswer(this, 'felt')">
+            <option value=" "> </option>
+            <option value="felt">felt</option>
+            <option value="drank">drank</option>
+            <option value="watched">watched</option>
+        </select>, and 🧠
+        <select class="select" onchange="checkAnswer(this, 'learnt')">
+            <option value=" "> </option>
+            <option value="learnt">learnt</option>
+            <option value="forgot">forgot</option>
+            <option value="guessed">guessed</option>
+        </select>.
+        Link 
+        <select class="select" onchange="checkAnswer(this, 'more')">
+            <option value=" "> </option>
+            <option value="less">less</option>
+            <option value="more">more</option>
+        </select> of what you are reading to what you've experienced in 🌍the real world.
+    </div>
+    <p class="question"><em>Question:</em> Think of a recent text you read. How did you connect it to your own experiences to enhance your understanding?</p>
+
+    <div class="strategy">
+        <strong>2️⃣  Visualise 🎨 </strong>  <br>
+        Make a 
+        <select class="select" onchange="checkAnswer(this, 'picture')">
+            <option value=" "> </option>
+            <option value="painting">painting</option>
+            <option value="dream">dream</option>
+            <option value="picture">picture</option>
+        </select> in your head as you read, so you can keep track of what you’ve read and check if it makes sense to you. Use more efficient symbols, emojis, tables, charts, graphs, MAPS, and 😎
+        <select class="select" onchange="checkAnswer(this, 'VIP words')">
+            <option value=" "> </option>
+            <option value="long sentences">long sentences</option>
+            <option value="VIP words">VIP words</option>
+        </select> in your visualisation, to help you 🧊
+        <select class="select" onchange="checkAnswer(this, 'condense')">
+            <option value=" "> </option>
+            <option value="delete">delete</option>
+            <option value="condense">condense</option>
+        </select> more meanings.
+    </div>
+    <p class="question"><em>Question:</em> How can creating mental images or diagrams help you better understand complex information?</p>
+
+    <div class="strategy">
+        <strong>3️⃣ Ask Questions and Predict ❓</strong> <br>
+        Before reading, check the book cover 📖. Take hints from the 
+        <select class="select" onchange="checkAnswer(this, 'previous')">
+            <option value=" "> </option>
+            <option value="next">next</option>
+            <option value="previous">previous</option>
+        </select> chapter, page 📄 or sentence. Ask who would do what, when, where,
+        <select class="select" onchange="checkAnswer(this, 'WHY')">
+            <option value=" "> </option>
+            <option value="WHERE">wow</option>
+            <option value="WHY">why</option>
+        </select> and how? This makes reading more 🎉
+        <select class="select" onchange="checkAnswer(this, 'fun')">
+            <option value=" "> </option>
+            <option value="fun">fun</option>
+            <option value="boring">boring</option>
+        </select> and 💾
+        <select class="select" onchange="checkAnswer(this, 'memorable')">
+            <option value=" "> </option>
+            <option value="forgettable">forgettable</option>
+            <option value="memorable">memorable</option>
+        </select> .
+    </div>
+    <p class="question"><em>Question:</em> Before starting a new text, what kinds of questions can you ask to prepare yourself for deeper understanding?</p>
+
+    <div class="strategy">
+        <strong>4️⃣ VIP words and phrases 🌟</strong> <br>
+        Highlight key words that help you understand the 🔑
+        <select class="select" onchange="checkAnswer(this, 'key')">
+            <option value=" "> </option>
+            <option value="key">key</option>
+            <option value="unimportant">unimportant</option>
+        </select> points. Know which words matter the ☝️
+        <select class="select" onchange="checkAnswer(this, 'most')">
+            <option value=" "> </option>
+            <option value="most">most</option>
+            <option value="least">least</option>
+        </select> and the 👇
+        <select class="select" onchange="checkAnswer(this, 'least')">
+            <option value=" "> </option>
+            <option value="most">most</option>
+            <option value="least">least</option>
+        </select> in a text.
+    </div>
+    <p class="question"><em>Question:</em> How can identifying VIP words help you summarize the main ideas of a text?</p>
+
+    <div class="strategy">
+        <strong>5️⃣  Breakdown and repair 🔧</strong> <br>
+        Fact-check by rereading, 📙
+        <select class="select" onchange="checkAnswer(this, 'using dictionary')">
+            <option value=" "> </option>
+            <option value="using dictionary">using dictionary</option>
+            <option value="writing notes">writing notes</option>
+            <option value="ignoring details">ignoring details</option>
+        </select>, 💬
+        <select class="select" onchange="checkAnswer(this, 'asking someone')">
+            <option value=" "> </option>
+            <option value="asking someone">asking someone</option>
+            <option value="skipping chapters">skipping chapters</option>
+            <option value="reading faster">reading faster</option>
+        </select>, googling 🔍, and comparing it with what you know already 🧠.
+    </div>
+    <p class="question"><em>Question:</em> When you encounter confusing information, what steps can you take to clarify your understanding?</p>
+
+    <div class="strategy">
+        <strong>6️⃣  Think like a detective 🕵️‍♂️ </strong><br>
+        Ask questions and predict, but not just by taking hints from what's in the text. A detective reads between  
+        <select class="select" onchange="checkAnswer(this, 'lines')">
+            <option value=" "> </option>
+            <option value="pages">Tom and Jerry</option>
+            <option value="lines">lines</option>
+            <option value="words">fish and chips</option>
+        </select>, working out information that isn’t ✍️
+        <select class="select" onchange="checkAnswer(this, 'written down')">
+            <option value=" "> </option>
+            <option value="thought">thought</option>
+            <option value="written down">written down</option>
+            <option value="guessed">guessed</option>
+        </select>. This process is known as ‘inference’ 💡.
+    </div>
+    <p class="question"><em>Question:</em> How can making inferences about the text help you uncover deeper meanings?</p>
+
+</div>
+
+<script>
+    function checkAnswer(selectElement, correctAnswer) {
+        if (selectElement.value === correctAnswer) {
+            selectElement.classList.remove('incorrect');
+            selectElement.classList.add('correct');
+        } else {
+            selectElement.classList.remove('correct');
+            selectElement.classList.add('incorrect');
+        }
+    }
+</script>
+
+</body>
+</html>
